@@ -40,5 +40,12 @@ public class Driver {
 		for(Bottle bottle : beverages){
 			System.out.println("You just drank a " + bottle);
 		}
+
+		Fillable fillable = new SodaBottle(20, new Soda());
+		fillable.fill(2);
+
+		Pourable bottle = new SodaBottle(20, new Soda());
+		System.out.println(bottle);
+		bottle.pour(2);
 	}
 }
